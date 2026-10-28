@@ -31,7 +31,7 @@ The repository includes a sampled, processed landmark dataset at `data/processed
 
 ## Streamlit deployment
 
-Deploy `app.py` from the repository root with Python 3.11 and install `requirements.txt`. Before deploying, ensure these files are included in the GitHub commit (they are allow-listed by `.gitignore`):
+Deploy `app.py` from the repository root with Python 3.11 and install `requirements.txt`. Streamlit Community Cloud also installs the Linux OpenCV runtime libraries listed in `packages.txt`; keep that file in the repository so image decoding works in the deployed Linux environment. Before deploying, ensure these files are included in the GitHub commit (they are allow-listed by `.gitignore`):
 
 - `outputs/models/best_model.joblib` and `outputs/models/knn.joblib` are required for image and camera inference.
 - `outputs/metrics.json` enables the model-comparison page.
