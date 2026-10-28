@@ -8,12 +8,16 @@ data/raw/*
 !data/raw/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/landmarks.csv
 outputs/*
 !outputs/.gitkeep
+!outputs/metrics.json
 !outputs/models/
 !outputs/plots/
 !outputs/screenshots/
 outputs/models/*
+!outputs/models/best_model.joblib
+!outputs/models/knn.joblib
 outputs/plots/*
 outputs/screenshots/*
 !outputs/models/.gitkeep
